@@ -60,18 +60,39 @@ function App() {
     },
   ];
   const sliderSettings = {
-    dots: true,
-    infinite: true,
-    speed: 600,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    responsive: [
-      { breakpoint: 1200, settings: { slidesToShow: 2 } },
-      { breakpoint: 900, settings: { slidesToShow: 1 } },
-    ],
-  };
+  dots: true,
+  infinite: true,
+  speed: 600,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  responsive: [
+    {
+      breakpoint: 1200, // tablet grande
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 900, // tablet pequeña
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 600, // móvil
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+      },
+    },
+  ],
+};
+
   const handleClick = () => {
     track("registro_click"); // Aquí envías el evento a Vercel
   };
