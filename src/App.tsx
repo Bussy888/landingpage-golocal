@@ -68,29 +68,10 @@ function App() {
   autoplay: true,
   autoplaySpeed: 4000,
   responsive: [
-    {
-      breakpoint: 1200, // tablet grande
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-      },
-    },
-    {
-      breakpoint: 900, // tablet pequeña
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-    {
-      breakpoint: 600, // móvil
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-      },
-    },
-  ],
+  { breakpoint: 1200, settings: { slidesToShow: 2, slidesToScroll: 1 } },
+  { breakpoint: 900, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+  { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+]
 };
 
   const handleClick = () => {
@@ -436,7 +417,7 @@ function App() {
 
         <Slider {...sliderSettings}>
           {testimonials.map((t, i) => (
-            <Box key={i} px={2}>
+            <Box key={i} sx={{ width: "100%" }}>
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
