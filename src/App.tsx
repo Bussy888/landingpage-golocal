@@ -98,7 +98,7 @@ function App() {
     />
 
     <Button
-      href="https://forms.gle/tu-link-de-forms"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSfNyHoY7fXljsp_Ivfby-furFf08z-ijjtwfFDuQU5bavUrcg/viewform?usp=header"
       target="_blank"
       onClick={handleClick}
       variant="contained"
@@ -142,7 +142,7 @@ function App() {
               negocio sin intermediarios.
             </Typography>
             <Button
-              href="https://forms.gle/tu-link-de-forms"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfNyHoY7fXljsp_Ivfby-furFf08z-ijjtwfFDuQU5bavUrcg/viewform?usp=header"
               target="_blank"
               onClick={handleClick}
               size="large"
